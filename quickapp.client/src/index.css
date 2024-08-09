@@ -1,0 +1,106 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+@tailwind base;
+@layer base{
+  body{
+      @apply min-h-screen bg-gray-100;
+  }
+}
+
+@tailwind components;
+@layer components {
+  input {
+    @apply w-full outline-none border border-gray-200 px-2 py-1 rounded-lg;
+  }
+  .pageTemplate1 {
+    @apply w-full lg:w-5/6 min-h-[calc(100vh-48px)] flex justify-center items-center p-4 mx-auto;
+  }
+  .pageTemplate2 {
+    @apply p-4 w-full min-h-[calc(100vh-38px)] flex flex-col gap-4 ;
+  }
+  .pageTemplate3 {
+    @apply w-full h-full p-4 flex flex-col justify-start items-center gap-2 bg-white border-2 rounded-lg;
+  }
+  .test1 {
+    @apply flex-1 min-h-[900px] h-5/6 bg-[#d4ebf8] flex flex-col justify-center items-center; /* Changed background color */
+}
+
+.test2 {
+    @apply w-full h-8 pl-2 text-lg border-solid border-2 border-[#4e75b4] rounded-lg; /* Changed border color */
+}
+
+.test3 {
+    @apply text-[#4e75b4] border border-[#4e75b4] hover:shadow-[0_0_5px_2px_#4e75b44c] px-3 rounded-2xl duration-200; /* Changed text color, border color, and shadow color */
+}
+
+}
+
+@tailwind utilities;

@@ -1,0 +1,40 @@
+﻿@import '~bootstrap/scss/bootstrap.scss';
+
+.form-border{
+    height: 300px;
+    position: relative;
+}
+
+.form-content{
+    height: 350px;
+} 
+
+.form{
+    width: 605px;
+    border-radius: 9%;
+    margin-top: 4%;
+    padding: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
+
+      
+}
+
+.test{
+    height: 100%;
+}
+
+.side{
+    height:max-content;
+}
+
+.tst{
+    height: 100vh;
+}
+.abc{
+    height: 100%;
+}
+
+.reg{
+    height: 100%vh;
+}
